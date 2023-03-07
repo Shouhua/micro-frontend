@@ -1,0 +1,31 @@
+{
+  "name": "micor-frontend-project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node ./config/dev.js ",
+    "build:portal": "cross-env NODE_ENV=production webpack --config config/webpack.portal.js",
+    "build:prod": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "build": "npm-run-all -p build:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "npm-run-all": "^4.1.5",
+    "parallel-webpack": "^2.6.0",
+    "vue-loader": "^17.0.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0",
+    "webpack-virtual-modules": "^0.5.0"
+  }
+}
